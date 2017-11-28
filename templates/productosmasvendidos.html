@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}BaseTotal{% endblock %}
+
+{% block page_content %}
+
+<li><a href="/paneldeconsultas">Volver al Panel de Consultas</a></li>  
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  
+    <h1 style="color:tomato;" ALIGN=center id='titulo'>Productos Mas Vendidos</h1> 
+     
+     
+    
+
+<table class="table" style="background-color: tomato">
+
+{% for x in lista3 %}
+  <tr>
+    <td><font color="white">{{x}}</font></td>
+    
+   
+  </tr>
+   
+  </tr>
+{% endfor %}
+</table>
+{% endblock %}

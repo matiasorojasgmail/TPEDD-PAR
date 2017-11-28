@@ -1,0 +1,34 @@
+
+
+{% extends "base.html" %}
+
+{% block title %}Productos Vendidos{% endblock %}
+
+{% block page_content %}
+
+<li><a href="/paneldeconsultas">Volver al Panel de Consultas</a></li>  
+
+ <form method="POST" action="/clientes">
+
+		
+		</form>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+ 
+<h1 style="color:tomato;" ALIGN=center id='titulo'>Productos Vendidos</h1>  
+     
+    
+
+<table class="table" style="background-color: tomato">
+
+{% for line in listar %}
+  <tr>
+    
+    <td><font color="white">{{ line[1] }}</font></td>
+     <td><font color="white">{{ line[2] }}</font></td>
+
+  </tr>
+{% endfor %}
+</table>
+{% endblock %}

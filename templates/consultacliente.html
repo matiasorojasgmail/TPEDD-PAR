@@ -1,0 +1,23 @@
+
+
+{% extends "base.html" %}
+
+{% block title %}Ingresar Cliente{% endblock %}
+
+{% block page_content %}
+<li><a href="/paneldeconsultas">Volver al Panel de Consultas</a></li> 
+<div class="page-header">    
+   
+    <h1 style="color:tomato;">Ingresar Cliente</h1>
+	<form method="POST" action="/consultacliente">
+            <br>
+            <br>
+			{{ dato.csrf_token }}
+			{{ dato.clientes(placeholder="Ingrese Cliente", size=20) }}
+			
+			<br><br><br>
+			{{ dato.submit() }}
+		</form>
+
+{% endblock %}
+

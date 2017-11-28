@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}BaseTotal{% endblock %}
+
+{% block page_content %}
+
+
+
+<li ><a href="/consultacliente">Buscar Por Cliente</a></li> 
+<br>
+<li ><a href="/consultaproducto">Buscar Por Productos</a></li> 
+<br>
+<li ><a href="/productosmasvendidos">Productos Mas Vendidos</a></li> 
+<br>
+<li ><a href="/mejoresclientes">Mejores Clientes</a></li> 
+<br>
+<li ><a href="/paneldeconsultas">Ventas</a></li>   
+<br>
+<br>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  
+<h1 style="color:tomato;" ALIGN=center id='titulo'>Ventas</h1> 
+
+<table class="table" style="background-color: tomato">
+
+{% for line in listar %}
+  <tr>
+    <td><font color="white">{{ line[0] }}</font></td>
+    <td><font color="white">{{ line[1] }}</font></td>
+    <td><font color="white">{{ line[2] }}</font></td>
+    <td><font color="white">{{ line[3] }}</font></td>
+    <td><font color="white">{{ line[4] }}</font></td>
+  </tr>
+{% endfor %}
+</table>
+{% endblock %}

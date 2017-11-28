@@ -1,0 +1,22 @@
+
+
+{% extends "base.html" %}
+
+{% block title %}Ingresar Cliente{% endblock %}
+
+{% block page_content %}
+
+<div class="page-header">    
+    <h1 style="color:tomato;">Debe Verificar de Base de Datos para Continuar</h1>
+	<form method="POST" action="/validarcsv">
+            <br>
+            <br>
+			{{ dato.csrf_token }}
+			
+			
+			<br>
+			{{ dato.submit() }}
+		</form>
+
+{% endblock %}
+
