@@ -1,4 +1,6 @@
 # TPEDD-PAR
+El Trabajo Practico se realizo utilizando los siguientes sistemas
+LDME_terciario, python3,, virtualenvwrapper, flask, bootstrap, flask-wtf, flask_script.
 
 0. FLUJO DEL PROGRAMA
 Al ingresar a la web, en la NavBar, podras iniciar sesion para poder realizar consultas, en caso que sea la primera vez que ingrese podras registrarse. Al validar usuario y contraseña, se rediccionara a Validar la Base de Datos, una vez aprobada la base seras redireccionado al Panel de Consultas, donde podras realizar consultas en la base de datos seleccionando segun necesidad.
@@ -19,11 +21,11 @@ Al ingresar a la web, en la NavBar, podras iniciar sesion para poder realizar co
   2.3 Registrase: Podra generar datos de acceso al sitio web para validar base de datos y realizar consultas.
   2.4 Panel de Consultas: Podra realizar consultas seleccionando opciones
   
-3. Al validar usuario y contraseña sera direccionado a validar base de datos para continuar, esta verificara el correcto estado de la base. En caso de error en la base, informara cual y debera contactarse con el administrador para verificarlo.
+3. Tutorial: Al ingresar con usuario y contraseña sera direccionado a validar base de datos para continuar, esta verificara el correcto estado de la base. En caso de error en la base, informara cual es y debera contactarse con el administrador para verificarlo.
 De ser aprobada redireccionara al panel de consultas. donde podra consultar las siguientes opciones
-  3.1 Buscar Por Cliente: Donde podra buscar en la base de datos ingresando un cliente.
-  3.2 Buscar Por Productos: Donde podra buscar en la base de datos ingresando un producto.
-  3.3 Productos Mas Vendidos:Donde listara los productos mas vendidos 
-  3.4 Mejores Clientes: Donde listara los mejores clientes
-  3.5 Informacion Completa: donde listara las ventas
+  3.1 Buscar Por Cliente: Debera ingresar un cliente y al buscar listara los productos que compro.
+  3.2 Buscar Por Productos: Debera ingresar un producto y al buscar listara los clientes que lo compraron.
+  3.3 Productos Mas Vendidos: Listara los productos mas vendidos 
+  3.4 Mejores Clientes: Donde Listara los mejores clientes
+  3.5 Ventas: Listara las ventas
 
